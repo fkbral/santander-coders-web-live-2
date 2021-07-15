@@ -1,9 +1,9 @@
 import React, { FormEvent, useState } from 'react'
 import './App.css'
 import { api } from './services/api'
-import { FaTemperatureHigh, FaThermometer, FaWind } from 'react-icons/fa'
+import { FaTemperatureHigh, FaWind } from 'react-icons/fa'
 
-type CurrentWeather = "Partly cloudy" | "Clear"
+type CurrentWeather = "Partly cloudy" | "Clear" | "Light snow" | "Sunny"
 
 type Forecast = {
   day: number
@@ -71,7 +71,7 @@ function App() {
 
           <section className="forecast">
             <h2>Previsão</h2>
-            <ul>
+            <ol>
             {weatherData.forecast &&
               weatherData.forecast.map((day, index) => 
                 <li>
@@ -92,7 +92,7 @@ function App() {
                   </div>
                 </li>
             )}
-              </ul>
+              </ol>
           </section>
         </main>
       }

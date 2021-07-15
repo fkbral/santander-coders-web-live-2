@@ -12,8 +12,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
-  height: 40px;
+  padding: 8px 12px;
+  height: 36px;
 }
 
 .App header form {
@@ -26,13 +26,13 @@
   flex: 1;
 }
 
-.App button[type="submit"] {
+.App button {
   background-color: hsl(226, 72%, 36%);
   color: #fff;
   transition: .2s ease-in-out;
 }
 
-.App button[type="submit"]:hover {
+.App button:hover {
   background-color: hsl(226, 72%, 26%);
 }
 
@@ -67,11 +67,11 @@
   font-size: 32px;
 }
 
-.forecast ul {
+.forecast ol {
   list-style: none;
 }
 
-.forecast ul li {
+.forecast ol li {
   padding: 8px 24px;
   background-color: rgba(0, 0, 0, .55);
   border-radius: 16px;
@@ -80,22 +80,22 @@
   justify-content: space-between;
 }
 
-.forecast ul li + li {
+.forecast ol li + li {
   margin-top: 8px;
 }
 
-.forecast ul li h3 {
+.forecast ol li h3 {
   font-weight: 400;
   min-width: 120px;
   text-align: left;
 }
 
-.forecast ul li div {
+.forecast ol li div {
   display: flex;
   min-width: 90px;
 }
 
-.forecast ul li div svg {
+.forecast ol li div svg {
   font-size: 18px;
   margin-right: 8px;
 }
