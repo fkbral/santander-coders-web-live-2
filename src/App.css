@@ -1,0 +1,101 @@
+.App {
+  background: linear-gradient(rgb(90, 100, 133), rgb(26, 58, 160));
+  height: 100vh;
+  width: 100%;
+  padding: 15px;
+}
+
+.App input, .App button {
+  border: 0;
+  border-radius: 16px;
+  color: #fff;  
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 40px;
+}
+
+.App header form {
+  display: flex;
+  gap: 12px;
+}
+
+.App input {
+  background-color: #333;
+  flex: 1;
+}
+
+.App button[type="submit"] {
+  background-color: hsl(226, 72%, 36%);
+  color: #fff;
+  transition: .2s ease-in-out;
+}
+
+.App button[type="submit"]:hover {
+  background-color: hsl(226, 72%, 26%);
+}
+
+.App main {
+  margin: 36px 0px;
+}
+
+.App h1 {
+  text-align: center;
+  margin: 36px 0px;
+}
+
+.App h2 {
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 72px 0;
+}
+
+.current-weather p {
+  font-size: 48px;
+}
+
+.current-weather p + p {
+  font-size: 32px;
+}
+
+.forecast ul {
+  list-style: none;
+}
+
+.forecast ul li {
+  padding: 8px 24px;
+  background-color: rgba(0, 0, 0, .55);
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast ul li + li {
+  margin-top: 8px;
+}
+
+.forecast ul li h3 {
+  font-weight: 400;
+  min-width: 120px;
+  text-align: left;
+}
+
+.forecast ul li div {
+  display: flex;
+  min-width: 90px;
+}
+
+.forecast ul li div svg {
+  font-size: 18px;
+  margin-right: 8px;
+}
